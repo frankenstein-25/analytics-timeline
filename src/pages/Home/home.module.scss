@@ -1,0 +1,16 @@
+.wrapper {
+  @apply w-full overflow-auto;
+  &::-webkit-scrollbar {
+    @apply w-1.5 h-1;
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-dark-400;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-dark-200 rounded-full;
+  }
+
+  .subWrapper {
+    min-width: 992px;
+  }
+}

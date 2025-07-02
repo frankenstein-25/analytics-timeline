@@ -1,0 +1,58 @@
+.wrapper {
+  @apply px-10 border-b border-b-dark-400 bg-dark-600 ;
+  height: 120px;
+
+  .subWrapper {
+    @apply h-full flex relative;
+  }
+
+  .timeBlock {
+    @apply flex-1 h-full flex items-center justify-between border-r border-r-dark-400/30 ;
+
+    &:first-of-type {
+      @apply border-l border-l-dark-400/30;
+    }
+
+    .textWrapper {
+      @apply h-full w-0 relative;
+    }
+
+    .floatingText {
+      @apply text-sm leading-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-dark-300 font-bold;
+    }
+  }
+
+  .contentWrapper {
+    @apply absolute top-1.5 left-1/2 -translate-x-1/2 flex justify-between items-center;
+    width: calc(100% - 48px);
+
+    .participantInfo {
+      @apply bg-dark-600 pb-2.5 pt-4 w-max;
+      max-width: 240px;
+
+      .name {
+        @apply text-white leading-none font-semibold;
+      }
+
+      .timeInfo {
+        @apply mt-1 text-xs text-white/75 leading-none;
+      }
+    }
+
+    .Link {
+      @apply flex items-center gap-0.5 text-sm leading-none text-primary;
+      .icon {
+        @apply w-5 h-5 stroke-primary;
+      }
+    }
+  }
+
+  .progressBarWrapper {
+    @apply absolute h-1 left-0 z-10 w-full;
+    bottom: 30px;
+
+    .progressBarSubWrapper {
+      @apply w-full h-full relative;
+    }
+  }
+}

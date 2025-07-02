@@ -1,0 +1,12 @@
+.wrapper {
+  @apply px-10 py-4 border-b flex border-b-dark-400 bg-dark-600;
+  .timeBlock {
+    @apply flex-1 h-3.5 flex items-center justify-between;
+    .textWrapper {
+      @apply h-full w-0 relative;
+    }
+    .floatingText {
+      @apply text-sm leading-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-dark-300 font-bold;
+    }
+  }
+}

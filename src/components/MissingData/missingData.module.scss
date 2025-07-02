@@ -1,0 +1,46 @@
+.message {
+  @apply text-white flex w-full h-full;
+  &[data-align='center'] {
+    @apply items-center;
+  }
+
+  &[data-align='start'] {
+    @apply items-start;
+  }
+
+  &[data-align='end'] {
+    @apply items-end;
+  }
+
+  &[data-align='stretch'] {
+    @apply items-stretch;
+  }
+
+  &[data-justify='start'] {
+    @apply justify-start;
+  }
+
+  &[data-justify='center'] {
+    @apply justify-center;
+  }
+
+  &[data-justify='end'] {
+    @apply justify-end;
+  }
+
+  &[data-fontSize='small'] {
+    @apply text-base;
+  }
+
+  &[data-fontSize='mid'] {
+    @apply text-lg;
+  }
+
+  &[data-fontSize='large'] {
+    @apply text-xl;
+  }
+
+  &[data-fontSize='xl'] {
+    @apply text-2xl;
+  }
+}

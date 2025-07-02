@@ -1,0 +1,48 @@
+.wrapper {
+  @apply w-full overflow-auto;
+  &::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+.header {
+  @apply p-4 flex justify-between gap-6 items-center border-b border-b-dark-300;
+  min-width: 520px;
+
+  .title {
+    @apply text-white font-bold text-sm leading-none ;
+  }
+
+  .leftContent {
+    @apply flex items-center gap-1.5;
+    .icon {
+      @apply stroke-white stroke-1 w-4 h-4;
+    }
+
+  }
+
+  .rightContent {
+    @apply flex items-center gap-2.5;
+    .title {
+      @apply text-white/70;
+    }
+
+    .switch {
+      @apply border rounded-full h-5 w-9 border-dark-200 relative transition-all duration-300;
+
+      &:after {
+        content: "";
+        @apply top-1/2 absolute -translate-y-1/2 rounded-full w-3.5 h-3.5 left-0.5 bg-dark-200 transition-all duration-300;
+      }
+
+      &.active {
+        @apply border-primary-600 bg-primary-700;
+        &:after {
+          left: 18px;
+          @apply bg-primary;
+        }
+      }
+    }
+  }
+}
+
